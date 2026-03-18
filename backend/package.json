@@ -1,0 +1,1 @@
+{\n  "name": "supermercado",\n  "version": "1.0.0",\n  "description": "Backend for Supermercado app",\n  "main": "server.js",\n  "scripts": {\n    "start": "node server.js"\n  },\n  "dependencies": {\n    "express": "^4.17.1",\n    "mysql": "^2.18.1",\n    "jsonwebtoken": "^8.5.1",\n    "dotenv": "^8.2.0",\n    "bcrypt": "^5.0.1",\n    "cors": "^2.8.5"\n  }\n}
