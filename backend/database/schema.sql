@@ -1,3 +1,7 @@
+CREATE DATABASE Supermercado; 
+
+USE Supermercado;
+
 CREATE TABLE usuarios (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(255) NOT NULL,
@@ -32,3 +36,5 @@ CREATE TABLE detalles_pedido (
     FOREIGN KEY (pedido_id) REFERENCES pedidos(id),
     FOREIGN KEY (producto_id) REFERENCES productos(id)
 );
+
+show databases;
