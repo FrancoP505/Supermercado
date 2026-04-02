@@ -67,6 +67,14 @@ exports.login = async (req, res) => {
   }
 };
 
+exports.logout = (req, res) => {
+  try {
+    res.json({ message: 'Logout exitoso' });
+  } catch (error) {
+    res.status(500).json({ message: 'Error al cerrar sesión', error: error.message });
+  }
+};
+
 exports.getProfile = async (req, res) => {
   try {
     const user = await User.findById(req.user.id);
